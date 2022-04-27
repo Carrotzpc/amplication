@@ -7,7 +7,7 @@
     "check-format": "lerna run --parallel check-format",
     "format": "lerna run --parallel format",
     "lint": "lerna run --parallel --ignore server-template --ignore admin-template lint",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap -- --legacy-peer-deps",
     "clean": "lerna clean",
     "prisma:generate": "lerna run --scope @amplication/server prisma:generate",
     "migrate:save": "lerna run --scope @amplication/server migrate:save",
